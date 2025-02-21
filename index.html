@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIH</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <!-- Home Screen -->
+    <div class="home-screen">
+        <h1 class="logo">
+            <div>AGRO CONNECT</div>
+        </h1>
+        <p>Fresh Fruits & Vegetables at Your Doorstep</p>
+        <button id="buyer-btn" onclick="showBuyerForm()">Buy Fresh</button>
+        <button id="seller-btn" onclick="showSellerForm()">Sell Fresh</button>
+    </div>
+    
+
+    <!-- Seller Registration Form -->
+    <div class="registration-form" id="seller-form">
+        <h2>Seller Registration</h2>
+        <label for="seller-name">Name:</label>
+        <input type="text" id="seller-name" name="seller-name" required>
+        
+        <label for="seller-email">Email:</label>
+        <input type="email" id="seller-email" name="seller-email" required>
+        
+        <label for="seller-password">Password:</label>
+        <input type="password" id="seller-password" name="seller-password" required>
+        
+        <label for="seller-phone">Phone Number:</label>
+        <input type="tel" id="seller-phone" name="seller-phone" required>
+        
+        <label for="store-name">Store Name:</label>
+        <input type="text" id="store-name" name="store-name" required>
+        
+        <button type="submit">Register as Seller</button>
+    </div>
+
+    <!-- Buyer Registration Form -->
+    <div class="registration-form" id="buyer-form">
+        <h2>Buyer Registration</h2>
+        <label for="buyer-name">Name:</label>
+        <input type="text" id="buyer-name" name="buyer-name" required>
+        
+        <label for="buyer-email">Email:</label>
+        <input type="email" id="buyer-email" name="buyer-email" required>
+        
+        <label for="buyer-password">Password:</label>
+        <input type="password" id="buyer-password" name="buyer-password" required>
+        
+        <label for="buyer-phone">Phone Number:</label>
+        <input type="tel" id="buyer-phone" name="buyer-phone" required>
+        
+        <button type="submit">Register as Buyer</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
